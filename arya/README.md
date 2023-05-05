@@ -62,6 +62,8 @@ Appyling the paste turned out to be harder than expected, and some of the paste 
 
 At this point, I am thinking it might be easier to completely pivot and make the design a proof of concept with larger components since there still might be time. This way, we could verify whether certain systems and components are working as anticipated. Also it would be nice to check if our software and PCB design is accurate. 
 
+bigegr esp32 will be better for sure. Suited for audio processing tasks such as decoding and encoding audio signals, which require a lot of computational power. Additionally, the ESP32 WROOM has more memory and storage capacity than the smaller versions, which is essential for storing and processing large audio files. The ESP32 WROOM also has built-in Bluetooth and Wi-Fi connectivity, which makes it easy to stream audio wirelessly to other devices. Finally, the ESP32 WROOM has a larger number of GPIO pins, which provides greater flexibility in terms of connecting audio peripherals such as microphones, speakers, and audio sensors.
+
 The USB C connector was also hard to solder because of the pin design. Found out from some other groups and students that it is possible to flash the ESP by simply connecting the wires to individual ports. Ordered a connector on amazon that could power and flash the ESP conveniently. 
 <br>
 
