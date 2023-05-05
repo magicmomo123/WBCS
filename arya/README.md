@@ -39,11 +39,15 @@ Received first PCB and all components.
 Upon completion of the PCB, we realized that there was a problem in the design for the pcb that prohibits us from flashing the esp 32 when the USB is connected. Because of the current protection to the PCB, we cannot boot the ESP when the USB is conencted. We need to slightly redesign to fix this problem .
 
 ![image](https://user-images.githubusercontent.com/80484261/236362622-5926ef11-b2cc-488a-a95a-f1c616b738b7.png)
-  
+  <br>
+
   Going with a design like this- should be pretty close to our final iteration hopefully.  
-  
+  <br>
+
+<br>
 
 ![image](https://user-images.githubusercontent.com/80484261/236364208-6c5de33c-1e65-4b47-a13c-2fac6b5b1202.png)  
+<br>
 
 Made transducer circuit.   
 
@@ -59,8 +63,13 @@ Appyling the paste turned out to be harder than expected, and some of the paste 
 At this point, I am thinking it might be easier to completely pivot and make the design a proof of concept with larger components since there still might be time. This way, we could verify whether certain systems and components are working as anticipated. Also it would be nice to check if our software and PCB design is accurate. 
 
 The USB C connector was also hard to solder because of the pin design. Found out from some other groups and students that it is possible to flash the ESP by simply connecting the wires to individual ports. Ordered a connector on amazon that could power and flash the ESP conveniently. 
+<br>
+
 ![image](https://user-images.githubusercontent.com/80484261/236362445-ed2d5cab-4dfe-48f4-8a85-dbcad461101d.png)
+<br>
+
 Connector schematic
+<br>
 
 Definitely going to use a micro usb or just go with the direct wire connectors in future. 
 
@@ -78,17 +87,23 @@ Second redesign completed, includes capability for power switching, and many bro
 Received third pcb, working on completion. Soldering was easier here since it was possible to do by hand. Was able to verify ESP32 connections and boot correctly. 
 Had issues when trying to boot and flash the ESP32 that likely stemmed from power circuit stuff. Without rosin, it would have been much more challenging to solder the small components onto the PCB, and I likely would have had to deal with cold solder joints or other issues.  
 
+<br>
+
 ![image](https://user-images.githubusercontent.com/80484261/236362525-479eb3d8-2f20-47f7-96bc-f9e1c4871755.png)
-  
+  <br>
+
   Standard ESP32 setup that allowed for easy booting.   
+<br>
 
 
 when I was trying to debug my ESP32 on the PCB after it received a brownout error. Checked the power circuit to ensure that they were providing the required voltage levels.Checked for any power loss issues such as bad solder joints, damaged traces, or faulty components. Ended up fixing it after some faulty wiring led to inconsistnet voltages. 
 
 ![image](https://user-images.githubusercontent.com/80484261/236360332-27598976-a623-4cba-bbee-0abf6f2f250f.png)
-  
+  <br>
+
   Final PCB design that ended up working.   
-  
+  <br>
+
 
 
 ## May
@@ -102,13 +117,17 @@ During demo shorted the voltage regulator to somehow get the ESP32 to boot. In t
 
 ### Testing images and verifications:
 ![image](https://user-images.githubusercontent.com/80484261/236363413-34777fd6-c3b4-4b14-9dab-c4b00b5f8a41.png)
-  
+  <br>
+
   Sampled audio STFT  
-  
+  <br>
+
 
 ![image](https://user-images.githubusercontent.com/80484261/236363561-4010b4a1-f9aa-448d-a5a3-830d6855eef9.png)
-  
+  <br>
+
   Battery Current Verification  
   
+<br>
 
 
