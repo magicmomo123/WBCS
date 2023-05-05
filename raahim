@@ -1,0 +1,64 @@
+Raahim Azeem Worklog
+February
+2/5 
+Got schematic design help regarding the charging of the PCB with Jason. Decided on using the MC3P chip to charge the battery itself. We decided that this would be a useful because it also included a stat pin that checked when the battery power is low. This pin could then be used to send a message to the microcontroller and we could have some kind of indiciation for when the battery is running low on the PCB.
+
+2/10 
+Talked with Professor Mironenko about possible solutions for AM radio reception. She is supplying us with some material from ECE 210 to assist us in our search.
+
+2/15 
+Decided on using Wifi instead of bluetooth and AM radio. Couple of reasons for this decision. First AM antenna's must be half or fourth of the center frequency, even with a coiled antenna, it would be much too large for fitting into a mouth. Second, wifi allows for more precise control of audio communication. We also have found a microcontroller that it small enough to fit into the mouth while still having capability for communication. We have chosen to use the ESP32C# N4, which has a size of about 10 x 10 mm. Now, we wil start work on our schematic.
+     
+2/25
+
+Finished the schemtic for the device with inspiration from the ESP32 C3 devkit. Working on PCB.
+Decided on using the MAX98 for our DAC as we decided to go with the ESP32Wroom for implementation. This chip is simple for integration for our subsystem as a whole and fits our size requirements as well.
+The Transducer we are using is a basic model which just has two wires that need to be connected to the output pins of the MAX98 to complete the circuit and vibrate accordingly to the signal being played over the DAC.
+
+March
+3/1
+Talked to Dr. Shilpa for consultation regarding safe materials that can be used to design the PCB. Learned about PMMA, accrylic material, and mouth molds to demonstrate how the PCB would fit into the mouth.
+
+3/7
+
+PCB design finished and sent to Vishal for development.
+
+3/17
+
+Visit to East Bay Dental. There we learn about creating mouth molds and software we can use to create invisalign like encasings that can be clipped on the teeth. After this meeting we used puddy to creates indentations of our upper jaw. After that we used a material called stone to fill up the indentation to create the mold. An image of this mold is attached to the notebook.
+
+3/28
+
+Received first order of the PCB to implement our project.
+
+April
+4/1
+
+Upon completion of the PCB, we realized that there was a problem in the design for the pcb that prohibits us from flashing the esp 32 when the USB is connected. Because of the current protection to the PCB, we cannot boot the ESP when the USB is conencted.
+We learned that the PMOS gate is turned off that allows the USB connection to the ESP32 when the PCB is plugged in to prevent 5V going directly to the PCB. We learn that because of this flashing onto the ESP is impossible. Have to go back to design and fix the error.
+4/5
+
+Redesign for the PCB completed and files sent to Vishal for fabrication order.
+
+4/23
+
+4/24
+Received third pcb.
+
+4/25
+Due to many complication, our last PCB was delivered 3 days before the demo. Had to quickly solder on all the components of the PCB. Due to the very small size soldering components was a very meticulous and extensive job as there was not much room for error.
+We ran into issue that our USB-C was clipping the edge of the PCB due to a last minute design change for the third order. To solve this had to saw off the edge of the USB-C charger to plug into the PCB itself. 
+Next we had issues connecting the PCB to our laptop to download and boot up code. 
+
+
+4/26 
+Demo Day for out PCB
+
+May
+5/1
+
+Created presentation for class
+
+5/2
+
+Presented project to Vishal and Professor Fliflet
