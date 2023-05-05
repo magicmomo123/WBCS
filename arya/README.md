@@ -9,6 +9,9 @@ Talked with Professor Mironenko about possible solutions for AM radio reception.
 2/15
 Decided on using Wifi instead of bluetooth and AM radio. Couple of reasons for this decision. First AM antenna's must be half or fourth of the center frequency, even with a coiled antenna, it would be much too large for fitting into a mouth. Second, wifi allows for more precise control of audio communication. We also have found a microcontroller that it small enough to fit into the mouth while still having capability for communication. We have chosen to use the ESP32C# N4, which has a size of about 10 x 10 mm. Now, we wil start work on our schematic. 
 
+![image](https://user-images.githubusercontent.com/80484261/236363802-96d56ef6-3177-4cab-acfa-b0ad756d3159.png)
+Updated Block Diagram
+
 2/25
 
 Finished the schemtic for the device with inspiration from the ESP32 C3 devkit. Working on PCB. 
@@ -34,6 +37,9 @@ Upon completion of the PCB, we realized that there was a problem in the design f
 ![image](https://user-images.githubusercontent.com/80484261/236362622-5926ef11-b2cc-488a-a95a-f1c616b738b7.png)
 Going with a design like this- should be pretty close to our final iteration hopefully. 
 
+![image](https://user-images.githubusercontent.com/80484261/236364208-6c5de33c-1e65-4b47-a13c-2fac6b5b1202.png)
+Made transducer circuit. 
+
 # Notable PCB Issues (across iterations)
 
 Ran into DRC issues when making the PCB. Thought I had enough grounding holes scattered and everything was wired as expected, but turns out there were zones that were not grounded since they were isolated from the rest of the board by traces. The warning and errors were not helpful in figuring this out.
@@ -47,6 +53,8 @@ At this point, I am thinking it might be easier to completely pivot and make the
 The USB C connector was also hard to solder because of the pin design. Found out from some other groups and students that it is possible to flash the ESP by simply connecting the wires to individual ports. Ordered a connector on amazon that could power and flash the ESP conveniently. 
 ![image](https://user-images.githubusercontent.com/80484261/236362445-ed2d5cab-4dfe-48f4-8a85-dbcad461101d.png)
 Connector schematic
+
+Definitely going to use a micro usb or just go with the direct wire connectors in future. 
 
 
 4/5 
@@ -75,4 +83,16 @@ ______list some modifications that you made/did here________
 
 5/1
 
-Finished PCB, with some components broken out on the the breadboard because of soldering issues, issues with incorrect footprint geometry, etc. Ready for demo. 
+Finished PCB, with some components broken out on the the breadboard because of soldering issues, issues with incorrect footprint geometry, etc. Ready for demo. Raahim helped fix a lot of things in the end; it was super helpful. 
+
+During demo shorted the voltage regulator to somehow get the ESP32 to boot. In the moment, let us finish whatever we needed to. Huge relief. 
+
+
+### Testing images and verifications:
+![image](https://user-images.githubusercontent.com/80484261/236363413-34777fd6-c3b4-4b14-9dab-c4b00b5f8a41.png)
+Sampled audio STFT
+
+![image](https://user-images.githubusercontent.com/80484261/236363561-4010b4a1-f9aa-448d-a5a3-830d6855eef9.png)
+Battery Current Verification
+
+
