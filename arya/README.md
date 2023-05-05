@@ -10,8 +10,10 @@ Talked with Professor Mironenko about possible solutions for AM radio reception.
 Decided on using Wifi instead of bluetooth and AM radio. Couple of reasons for this decision. First AM antenna's must be half or fourth of the center frequency, even with a coiled antenna, it would be much too large for fitting into a mouth. Second, wifi allows for more precise control of audio communication. We also have found a microcontroller that it small enough to fit into the mouth while still having capability for communication. We have chosen to use the ESP32C# N4, which has a size of about 10 x 10 mm. Now, we wil start work on our schematic. 
 
 ![image](https://user-images.githubusercontent.com/80484261/236363802-96d56ef6-3177-4cab-acfa-b0ad756d3159.png)  
+<br>
 
 Updated Block Diagram  
+<br>
 
 
 2/25
@@ -88,7 +90,6 @@ when I was trying to debug my ESP32 on the PCB after it received a brownout erro
   Final PCB design that ended up working.   
   
 
-______list some modifications that you made/did here________
 
 ## May
 
