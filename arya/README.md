@@ -26,6 +26,10 @@ Finished the schemtic for the device with inspiration from the ESP32 C3 devkit. 
 
 PCB design finished and sent to vishal for development. 
 
+Before my PCB arrived, ordered a devkit for the ESP32 on Amazon and tested my software on the devboard to ensure that everything was working as expected. Protoyped some stuff ahead of time. 
+
+uploaded my code using the Arduino IDE, which allowed me to easily interact with the ESP32 and test various features of my software. Tested some initial code and setup stuff to avoid issues in the future. Need to be efficient in this point of the project since I know a lot can go wrong and the PCB turn around time is a huge blocker. 
+
 3/28 
 
 Received first PCB and all components. 
@@ -129,7 +133,6 @@ During demo shorted the voltage regulator to somehow get the ESP32 to boot. In t
   <br>
 
   Battery Current Verification  
-  
 <br>
-
+ in order to generate a current to battery graph for my circuit, I first probed the circuit at various points using a multimeter to measure the current flowing through each component. I recorded these measurements in a spreadsheet, along with the corresponding battery voltage at each point.
 
